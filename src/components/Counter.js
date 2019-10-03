@@ -14,6 +14,7 @@ const useCount = (initialValue = 0, interval = 1, limit = 100) => {
   return [count, increment, decrement, reset];
 };
 
+
 export default function Counter({ user, countLimit }) {
   const [count, increment, decrement, reset] = useCount(0, 1, countLimit);
 
